@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iLanding</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .link-dark {
+        transition: color 0.45s !important;
+      }
+
+      .link-dark:hover {
+        color: #0d6efd !important;
+      }
+
+      .features-link {
+        transition: color 0.45s !important;
+      }
+
+      .features-link:hover {
+        color: #0d6efd !important;
+      }
+
+      .btn-cta {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+        transition: all 0.3s;
+      }
+
+      .btn-cta:hover {
+        background-color: white !important;
+        color: #0d6efd !important;
+      }
+
+      .quote-icon-right {
+        display: inline-block;
+        right: -5px;
+        position: relative;
+        top: 5px;
+        font-size: 24px;
+        transform: scale(-1, -1);
+      }
+
+      .quote-icon-left {
+        display: inline-block;
+        left: -5px;
+        font-size: 24px;
+        position: relative;
+      }
+
+      .buy-hover {
+        transition: opacity 0.15s;
+      }
+
+      .achievements-hover:hover .achievement-icon {
+        background-color: #0d6efd !important;
+        color: white !important;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: white !important;
+        color: #0d6efd !important;
+        box-shadow: none !important;
+      }
+
+      .accordion-button:focus {
+        box-shadow: none !important;
+      }
+
+      .accordion-button,
+      .accordion-body {
+        padding: 0 !important;
+      }
+
+      .accordion-body {
+        padding-top: 10px !important;
+      }
+
+      .accordion-item {
+        padding: 1rem;
+      }
+
+      .accordion-collapse {
+        transition: height 0.5s ease, opacity 0.3s ease !important;
+      }
+
+      .accordion-header {
+        font-family: "Nunito", sans-serif;
+        font-weight: 600 !important;
+      }
+
+      .nav-link .active {
+        color: #0d6efd !important;
+      }
+
+      .features-tabs .active {
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="relative">
+      <header
+        class="absolute d-flex header-container rounded-pill px-3 px-lg-4 shadow-sm align-items-center justify-content-between justify-content-md-between py-2"
+      >
+        <a class="text-decoration-none" href=""
+          ><h1 class="sitename m-0">iLanding</h1></a
+        >
+        <ul class="nav mb-2 mb-md-0 gap-4 d-none d-xl-flex" id="scrollspy-nav">
+          <li>
+            <a href="#home" class="nav-link p-3 link-dark">Home</a>
+          </li>
+          <li>
+            <a href="#about-section" class="nav-link p-3 link-dark">About</a>
+          </li>
+          <li>
+            <a href="#features" class="nav-link p-3 link-dark">Features</a>
+          </li>
+          <li>
+            <a href="#services" class="nav-link p-3 link-dark">Services</a>
+          </li>
+          <li>
+            <a href="#pricing" class="nav-link p-3 link-dark">Pricing</a>
+          </li>
+          <li class="dropdown">
+            <a
+              href=""
+              class="nav-link link-dark p-3 d-flex gap-1 align-items-center"
+              >Dropdown <i class="bi bi-chevron-down"></i
+            ></a>
+            <ul class="dropdown-items shadow bg-white rounded-2 p-1">
+              <li><a class="nav-link link-dark my-2" href="">Dropdown 1</a></li>
+              <li class="deep-dropdown">
+                <a
+                  class="nav-link link-dark my-2 d-flex justify-content-between"
+                  href=""
+                  >Deep Dropdown <i class="bi bi-chevron-down"></i
+                ></a>
+                <ul class="deep-dropdown-items shadow bg-white rounded-2 p-1">
+                  <li>
+                    <a class="nav-link link-dark my-2" href=""
+                      >Deep Dropdown 1</a
+                    >
+                  </li>
+                  <li class="deep-dropdown">
+                    <a
+                      class="nav-link link-dark my-2 d-flex justify-content-between"
+                      href=""
+                      >Deep Dropdown 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-link link-dark my-2" href=""
+                      >Deep Dropdown 3</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-link link-dark my-2" href=""
+                      >Deep Dropdown 4</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-link link-dark my-2" href=""
+                      >Deep Dropdown 5</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a class="nav-link link-dark my-2" href="">Dropdown 2</a></li>
+              <li><a class="nav-link link-dark my-2" href="">Dropdown 3</a></li>
+              <li><a class="nav-link link-dark my-2" href="">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link p-3 link-dark">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a
+            class="bg-primary text-white text-decoration-none rounded-pill get-started-header"
+            href="#"
+            >Get Started</a
+          >
+          <a
+            class="d-xl-none"
+            data-bs-toggle="modal"
+            data-bs-target="#mobileMenuModal"
+            style="color: #212529; font-size: 24px"
+            href=""
+            ><i class="bi bi-list"></i
+          ></a>
+        </div>
+      </header>
+      <section id="home" class="container section-1">
+        <div
+          class="container d-flex flex-column flex-lg-row align-items-center justify-content-between text-center text-lg-start"
+        >
+          <div>
+            <div
+              class="company-badge mb-4 bg-primary-subtle text-primary fs-6 rounded-pill d-inline-block"
+            >
+              <i class="bi bi-gear-fill me-1"></i> Working for your success
+            </div>
+            <h1 class="slogan display-4 mb-4">
+              Maecenas Vitae <br />
+              Consectetur Led <br />
+              <span class="text-primary">Vestibulum Ante</span>
+            </h1>
+            <p class="mb-4 mb-md-5 slogan-pg">
+              Nullam quis ante. Etiam sit amet orci eget eros faucibus
+              tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
+              sodales sagittis magna.
+            </p>
+            <div
+              class="d-flex justify-content-center justify-content-lg-start flex-wrap"
+            >
+              <a
+                href="#about"
+                class="btn btn-primary rounded-pill me-0 me-sm-2 mx-1 get-started"
+                >Get Started</a
+              >
+              <a
+                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                class="btn mt-2 mt-sm-0 glightbox play-video-button d-flex align-items-center"
+              >
+                <i class="bi bi-play-circle me-2"></i>
+                Play Video
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="w-100 d-flex position-relative">
+              <img
+                class="w-100 object-fit-cover mx-auto"
+                src="imgs/illustration-1.webp"
+              />
+              <div class="overlay bg-white rounded p-3 position-absolute">
+                <div class="d-flex gap-0">
+                  <div class="d-flex">
+                    <img
+                      class="overlay-person rounded-circle"
+                      src="imgs/avatar-1.webp"
+                    />
+                    <img
+                      class="overlay-person rounded-circle"
+                      src="imgs/avatar-2.webp"
+                    />
+                    <img
+                      class="overlay-person rounded-circle"
+                      src="imgs/avatar-3.webp"
+                    />
+                    <img
+                      class="overlay-person rounded-circle"
+                      src="imgs/avatar-4.webp"
+                    />
+                    <img
+                      class="overlay-person rounded-circle"
+                      src="imgs/avatar-5.webp"
+                    />
+                  </div>
+                  <div
+                    class="overlay-person overlay-badge bg-primary d-flex align-items-center justify-content-center rounded-circle"
+                  >
+                    12+
+                  </div>
+                </div>
+                <div>
+                  <p class="overlay-pg mb-0 mt-2 text-center">
+                    12,000+ lorem ipsum dolor sit amet<br />consectetur
+                    adipiscing elit
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-5 d-flex flex-column flex-md-row achievements bg-white rounded-4 shadow-sm align-items-lg-center align-items-start"
+        >
+          <div class="d-flex flex-column gap-md-5 flex-lg-row">
+            <div class="achievements-hover d-flex align-items-center gap-3 p-4">
+              <div
+                class="achievement-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-trophy"></i>
+              </div>
+              <div>
+                <h4 class="m-0 achievement-heading">3x Won<br />Awards</h4>
+                <p class="m-0 achievement-pg">Vestibulum ante<br />ipsum</p>
+              </div>
+            </div>
+            <div class="achievements-hover d-flex align-items-center gap-3 p-4">
+              <div
+                class="achievement-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <div>
+                <h4 class="m-0 achievement-heading">6.5k<br />Faucibus</h4>
+                <p class="m-0 achievement-pg">Nullam quis ante</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-md-5 flex-lg-row">
+            <div class="achievements-hover d-flex align-items-center gap-3 p-4">
+              <div
+                class="achievement-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <div>
+                <h4 class="m-0 achievement-heading">80k Mauris</h4>
+                <p class="m-0 achievement-pg">Etiam sit amet orci</p>
+              </div>
+            </div>
+            <div class="achievements-hover d-flex align-items-center gap-3 p-4">
+              <div
+                class="achievement-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-award"></i>
+              </div>
+              <div>
+                <h4 class="m-0 achievement-heading">6x Phasellus</h4>
+                <p class="m-0 achievement-pg">Vestibulum ante<br />ipsum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="note">
+      <marquee class="note-text d-flex"
+        ><strong>NOTE: </strong>This website is created for academic purposes.
+        All credit for the design reference goes to BootstrapMade.</marquee
+      >
+    </section>
+    <section class="section-2 pt-5" id="about-section">
+      <div
+        class="container d-flex pt-5 mt-5 flex-column flex-xl-row align-items-center justify-content-between text-center text-lg-start"
+      >
+        <div>
+          <div class="about-heading mb-3 text-primary fs-6 d-inline-block">
+            <span>MORE ABOUT US</span>
+          </div>
+          <h2 class="slogan display-6 mb-4">
+            Voluptas enim suscipit temporibus
+          </h2>
+          <p class="mb-4 mb-md-5 slogan-pg">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                <i class="bi bi-check-circle-fill text-primary fs-5"></i> Lorem
+                ipsum dolor sit amet
+              </p>
+              <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+                Consectetur adipiscing elit
+              </p>
+              <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                <i class="bi bi-check-circle-fill text-primary fs-5"></i> Sed do
+                eiusmod tempor
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+                Incididunt ut labore et
+              </p>
+              <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                <i class="bi bi-check-circle-fill text-primary fs-5"></i> Dolore
+                magna aliqua
+              </p>
+              <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                <i class="bi bi-check-circle-fill text-primary fs-5"></i> Ut
+                enim ad minim veniam
+              </p>
+            </div>
+          </div>
+          <div class="row mt-4 align-items-center justify-content-center">
+            <div class="col-lg-5 d-flex gap-3 align-items-center">
+              <img
+                class="profile-picture rounded-circle"
+                src="imgs/avatar-1 (1).webp"
+              />
+              <div>
+                <h4 class="profile-name m-0">Mario<br />Smith</h4>
+                <p class="profile-position text-primary m-0">
+                  CEO &amp; Founder
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-7 d-flex gap-3 align-items-center shadow-sm mb-4 p-4"
+            >
+              <div><i class="bi bi-telephone-fill text-primary fs-4"></i></div>
+              <div>
+                <p class="m-0">Call us anytime</p>
+                <p class="m-0"><strong>+123 456-789</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="w-100 d-flex position-relative">
+            <img
+              class="w-100 object-fit-cover mx-auto rounded-4"
+              src="imgs/about-5.webp"
+            />
+            <div
+              class="overlay d-none d-lg-block bg-primary rounded p-3 text-center position-absolute"
+            >
+              <h3 class="text-white overlay-2-heading mb-2">
+                15+ <span>Years</span>
+              </h3>
+              <p class="overlay-2-pg mb-0 text-white">
+                Of experience in business service
+              </p>
+            </div>
+            <div
+              class="overlay-3 d-none d-lg-block position-absolute z-index-1"
+            >
+              <img
+                class="w-100 rounded-4 border border-5 border-white"
+                src="imgs/about-2.webp"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-lg-none mt-5">
+        <img class="w-100 rounded-4" src="imgs/about-2.webp" />
+      </div>
+      <div
+        class="d-flex d-lg-none justify-content-center align-items-center mt-4"
+      >
+        <div class="d-inline-flex">
+          <div class="overlay bg-primary rounded p-3 text-center">
+            <h3 class="text-white overlay-2-heading mb-2">
+              15+ <span>Years</span>
+            </h3>
+            <p class="overlay-2-pg mb-0 text-white">
+              Of experience in business service
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="section-3">
+      <div class="text-center">
+        <h2 class="section-3-heading">Features</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <ul
+          class="nav nav-pills features-tabs d-inline-flex gap-lg-4 gap-0 justify-content-center p-0 p-1 rounded-pill mb-3"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link link-dark p-0 rounded-pill px-4 py-2 active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Modlist
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link link-dark p-0 rounded-pill px-4 py-2"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              Praesenti
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link link-dark p-0 rounded-pill px-4 py-2"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              Explica
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+          tabindex="0"
+        >
+          <div
+            class="container d-flex flex-column-reverse gap-lg-5 flex-lg-row align-items-center justify-content-between text-center text-lg-start"
+          >
+            <div class="w-50-lg px-4">
+              <div>
+                <h2 class="section-3-sub-heading">
+                  Voluptatem dignissimos provident
+                </h2>
+                <p class="mb-3 mb-md-5 slogan-pg fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i> Ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </p>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i> Ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="w-50-lg">
+              <div class="w-100 d-flex position-relative">
+                <img
+                  class="w-100 object-fit-cover"
+                  src="imgs/features-illustration-1.webp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <div
+            class="container d-flex flex-column-reverse gap-lg-5 flex-lg-row align-items-center justify-content-between text-center text-lg-start"
+          >
+            <div class="w-50-lg px-4">
+              <div>
+                <h2 class="section-3-sub-heading">
+                  Neque exercitationem debitis
+                </h2>
+                <p class="mb-3 mb-md-5 slogan-pg fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i> Ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </p>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i>
+                  Provident mollitia neque rerum asperiores dolores quos qui a.
+                  Ipsum neque dolor voluptate nisi sed.
+                </p>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i> Ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="w-50-lg">
+              <div class="w-100 d-flex position-relative">
+                <img
+                  class="w-100 object-fit-cover"
+                  src="imgs/features-illustration-2.webp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+          tabindex="0"
+        >
+          <div
+            class="container d-flex flex-column-reverse gap-lg-5 flex-lg-row align-items-center justify-content-between text-center text-lg-start"
+          >
+            <div class="w-50-lg px-4">
+              <div>
+                <h2 class="section-3-sub-heading text-lg-nowrap">
+                  Voluptatibus commodi accusamu
+                </h2>
+                <p class="mb-3 mb-md-5 slogan-pg fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i> Ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </p>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i>
+                  Provident mollitia neque rerum asperiores dolores quos qui a.
+                  Ipsum neque dolor voluptate nisi sed.
+                </p>
+                <p class="mb-3 d-flex align-items-center gap-2 checkmark-about">
+                  <i class="bi bi-check2-all text-primary fs-5"></i> Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="w-50-lg">
+              <div class="w-100 d-flex position-relative">
+                <img
+                  class="w-100 object-fit-cover"
+                  src="imgs/features-illustration-3.webp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-lg-flex gap-2 mt-5 pt-5">
+        <div class="d-flex flex-column flex-md-row gap-2 mb-2 mb-lg-0">
+          <div class="features-item bg-warning-subtle rounded-3 p-4">
+            <i class="bi bi-award text-warning fs-1"></i>
+            <div>
+              <h4 class="m-0 features-heading fw-bold">Corporis voluptates</h4>
+              <p class="m-0 features-pg">
+                Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                laboris nisi ut aliquip
+              </p>
+            </div>
+          </div>
+          <div class="features-item bg-info-subtle rounded-3 p-4">
+            <i class="bi bi-patch-check text-info fs-1"></i>
+            <div>
+              <h4 class="m-0 features-heading fw-bold">Corporis voluptates</h4>
+              <p class="m-0 features-pg">
+                Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                laboris nisi ut aliquip
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row gap-2">
+          <div class="features-item bg-success-subtle rounded-3 p-4">
+            <i class="bi bi-sunrise text-success fs-1"></i>
+            <div>
+              <h4 class="m-0 features-heading fw-bold">Ullamco laboris</h4>
+              <p class="m-0 features-pg">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt
+              </p>
+            </div>
+          </div>
+          <div class="features-item bg-danger-subtle rounded-3 p-4">
+            <i class="bi bi-shield text-danger fs-1"></i>
+            <div>
+              <h4 class="m-0 features-heading fw-bold">Labore consequatur</h4>
+              <p class="m-0 features-pg">
+                Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                maiores omnis facere
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex flex-column justify-content-around">
+            <div
+              class="text-lg-end text-center d-flex justify-content-center flex-column-reverse align-items-center align-items-lg-end gap-4"
+            >
+              <div>
+                <h3 class="slogan fs-5">Use On Any Device</h3>
+                <p class="slogan-pg fs-6">
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; In ac dui quis mi consectetuer
+                  lacinia.
+                </p>
+              </div>
+              <div
+                class="features-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-display"></i>
+              </div>
+            </div>
+            <div
+              class="text-lg-end text-center d-flex justify-content-center flex-column-reverse align-items-center align-items-lg-end gap-4"
+            >
+              <div>
+                <h3 class="slogan fs-5">Feather Icons</h3>
+                <p class="slogan-pg fs-6">
+                  Phasellus ullamcorper ipsum rutrum nunc nunc nonummy metus
+                  vestibulum volutpat sapien arcu sed augue aliquam erat
+                  volutpat.
+                </p>
+              </div>
+              <div
+                class="features-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-feather"></i>
+              </div>
+            </div>
+            <div
+              class="text-lg-end text-center d-flex justify-content-center flex-column-reverse align-items-center align-items-lg-end gap-4"
+            >
+              <div>
+                <h3 class="slogan fs-5">Retina Ready</h3>
+                <p class="slogan-pg fs-6">
+                  Aenean tellus metus bibendum sed posuere ac mattis non nunc
+                  vestibulum fringilla purus sit amet fermentum aenean commodo.
+                </p>
+              </div>
+              <div
+                class="features-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 my-5">
+            <img class="w-100" src="imgs/phone-app-screen.webp" />
+          </div>
+          <div class="col-lg-4 d-flex flex-column justify-content-around">
+            <div
+              class="text-lg-start text-center d-flex justify-content-center flex-column align-items-center align-items-lg-start gap-4"
+            >
+              <div
+                class="features-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-code-square"></i>
+              </div>
+              <div>
+                <h3 class="slogan fs-5">W3c Valid Code</h3>
+                <p class="slogan-pg fs-6">
+                  Donec vitae sapien ut libero venenatis faucibus nullam quis
+                  ante etiam sit amet orci eget eros faucibus tincidunt.
+                </p>
+              </div>
+            </div>
+            <div
+              class="text-lg-start text-center d-flex justify-content-center flex-column align-items-center align-items-lg-start gap-4"
+            >
+              <div
+                class="features-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-phone"></i>
+              </div>
+              <div>
+                <h3 class="slogan fs-5">Fully Responsive</h3>
+                <p class="slogan-pg fs-6">
+                  Maecenas tempus tellus eget condimentum rhoncus sem quam
+                  semper libero sit amet adipiscing sem neque sed ipsum.
+                </p>
+              </div>
+            </div>
+            <div
+              class="text-lg-start text-center d-flex justify-content-center flex-column align-items-center align-items-lg-start gap-4"
+            >
+              <div
+                class="features-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-circle"
+              >
+                <i class="bi bi-browser-chrome"></i>
+              </div>
+              <div>
+                <h3 class="slogan fs-5">Browser Compatibility</h3>
+                <p class="slogan-pg fs-6">
+                  Nullam dictum felis eu pede mollis pretium integer tincidunt
+                  cras dapibus vivamus elementum semper nisi aenean vulputate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5 py-5">
+        <div class="call-to-action bg-primary rounded-4 px-4 py-5">
+          <div class="text-center w-75 mx-auto mb-4">
+            <h1 class="display-4 slogan text-white fw-light">
+              Maecenas tempus tellus eget condimentum
+            </h1>
+          </div>
+          <div class="text-center w-75 mx-auto mb-4">
+            <p class="text-white slogan-pg">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
+              vel
+            </p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a
+              href="#"
+              class="btn btn-cta text-white rounded-pill border border-2 border-white px-4 py-2"
+              >Call To Action</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-10">
+      <div class="owl-carousel owl-theme px-5 px-md-4">
+        <div class="item">
+          <img class="slider-image px-lg-5 px-md-4" src="imgs/client-1.png" />
+        </div>
+        <div class="item">
+          <img class="slider-image px-lg-5 px-md-4" src="imgs/client-2.png" />
+        </div>
+        <div class="item">
+          <img class="slider-image px-lg-5 px-md-4" src="imgs/client-3.png" />
+        </div>
+        <div class="item">
+          <img class="slider-image px-lg-5 px-md-4" src="imgs/client-4.png" />
+        </div>
+        <div class="item">
+          <img class="slider-image px-lg-5 px-md-4" src="imgs/client-5.png" />
+        </div>
+        <div class="item">
+          <img class="slider-image px-lg-5 px-md-4" src="imgs/client-6.png" />
+        </div>
+        <div class="item">
+          <img class="slider-image px-lg-5 px-md-4" src="imgs/client-7.png" />
+        </div>
+        <div class="item">
+          <img class="slider-image px-lg-5 px-md-4" src="imgs/client-8.png" />
+        </div>
+      </div>
+    </section>
+    <section class="section-5">
+      <div class="container py-5">
+        <div class="text-center pb-5">
+          <h2 class="section-3-heading">Testimonials</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+        </div>
+        <div class="row gap-5">
+          <div class="d-lg-flex gap-lg-5 flex-lg-row d-flex flex-column gap-5">
+            <div class="col-lg-6 p-4 bg-white shadow">
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <img
+                    class="testi-pic rounded-circle"
+                    src="imgs/testimonials-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 class="slogan mb-0 fs-5">Saul Goodman</h3>
+                  <p class="overlay-2-pg text-dark mb-2">Ceo & Founder</p>
+                  <span
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                  ></span>
+                </div>
+              </div>
+              <div>
+                <p class="testi-review fst-italic slogan-pg mb-0 mt-4">
+                  <i class="bi bi-quote quote-icon-left text-primary"></i>
+                  <span
+                    >Proin iaculis purus consequat sem cure digni ssim donec
+                    porttitora entum suscipit rhoncus. Accusantium quam,
+                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                    risus at semper.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right text-primary"></i>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 p-4 bg-white shadow">
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <img
+                    class="testi-pic rounded-circle"
+                    src="imgs/testimonials-2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 class="slogan mb-0 fs-5">Sara Wilsson</h3>
+                  <p class="overlay-2-pg text-dark mb-2">Designer</p>
+                  <span
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                  ></span>
+                </div>
+              </div>
+              <div>
+                <p class="testi-review fst-italic slogan-pg mb-0 mt-4">
+                  <i class="bi bi-quote quote-icon-left text-primary"></i>
+                  <span
+                    >Export tempor illum tamen malis malis eram quae irure esse
+                    labore quem cillum quid cillum eram malis quorum velit fore
+                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                    culpa.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right text-primary"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-lg-flex gap-lg-5 flex-lg-row d-flex flex-column gap-5">
+            <div class="col-lg-6 p-4 bg-white shadow">
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <img
+                    class="testi-pic rounded-circle"
+                    src="imgs/testimonials-3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 class="slogan mb-0 fs-5">Jena Karlis</h3>
+                  <p class="overlay-2-pg text-dark mb-2">Store Owner</p>
+                  <span
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                  ></span>
+                </div>
+              </div>
+              <div>
+                <p class="testi-review fst-italic slogan-pg mb-0 mt-4">
+                  <i class="bi bi-quote quote-icon-left text-primary"></i>
+                  <span
+                    >Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right text-primary"></i>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 p-4 bg-white shadow">
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <img
+                    class="testi-pic rounded-circle"
+                    src="imgs/testimonials-4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 class="slogan mb-0 fs-5">Matt Brandon</h3>
+                  <p class="overlay-2-pg text-dark mb-2">Freelancer</p>
+                  <span
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                    ><i class="bi bi-star-fill text-warning"></i
+                  ></span>
+                </div>
+              </div>
+              <div>
+                <p class="testi-review fst-italic slogan-pg mb-0 mt-4">
+                  <i class="bi bi-quote quote-icon-left text-primary"></i>
+                  <span
+                    >Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore
+                    illum veniam.
+                  </span>
+                  <i class="bi bi-quote quote-icon-right text-primary"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="container row mx-auto justify-content-lg-between p-5">
+          <div class="work-info-item col-lg-3 p-5">
+            <div class="text-center work-info-header">
+              <h2 class="work-info-heading">232</h2>
+              <p class="work-info-sub-heading m-0">Clients</p>
+            </div>
+          </div>
+          <div class="work-info-item col-lg-3 p-5">
+            <div class="text-center work-info-header">
+              <h2 class="work-info-heading">521</h2>
+              <p class="work-info-sub-heading m-0">Projects</p>
+            </div>
+          </div>
+          <div class="work-info-item col-lg-3 p-5">
+            <div class="text-center work-info-header">
+              <h2 class="work-info-heading">1453</h2>
+              <p class="work-info-sub-heading m-0">Hours Of Support</p>
+            </div>
+          </div>
+          <div class="work-info-item col-lg-3 p-5">
+            <div class="text-center work-info-header">
+              <h2 class="work-info-heading">32</h2>
+              <p class="work-info-sub-heading m-0">Workers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-6" id="services">
+      <div class="container py-5">
+        <div class="text-center pb-5">
+          <h2 class="section-3-heading">Services</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+        </div>
+        <div class="row gap-4">
+          <div class="d-lg-flex gap-lg-5 flex-lg-row d-flex flex-column gap-4">
+            <div
+              class="col-lg-6 p-4 bg-white d-flex gap-4 rounded-3 hover-shadow hover-bg"
+            >
+              <div class="d-flex gap-2 align-items-start">
+                <div
+                  class="features-icon service-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-3"
+                >
+                  <i class="bi bi-activity"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="slogan fs-4">Nesciunt Mete</h3>
+                <p class="slogan-pg service-pg mb-4">
+                  Provident nihil minus qui consequatur non omnis maiores. Eos
+                  accusantium minus dolores iure perferendis tempore et
+                  consequatur.
+                </p>
+                <a
+                  class="services-read-more d-flex align-items-center gap-2 text-decoration-none fw-bold"
+                  href=""
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 p-4 bg-white d-flex gap-4 rounded-3 hover-shadow hover-bg"
+            >
+              <div class="d-flex gap-2 align-items-start">
+                <div
+                  class="features-icon service-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-3"
+                >
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="slogan fs-4">Eosle Commodi</h3>
+                <p class="slogan-pg service-pg mb-4">
+                  Ut autem aut autem non a. Sint sint sit facilis nam iusto
+                  sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
+                </p>
+                <a
+                  class="services-read-more d-flex align-items-center gap-2 text-decoration-none fw-bold"
+                  href=""
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="d-lg-flex gap-lg-5 flex-lg-row d-flex flex-column gap-4">
+            <div
+              class="col-lg-6 p-4 bg-white d-flex gap-4 rounded-3 hover-shadow hover-bg"
+            >
+              <div class="d-flex gap-2 align-items-start">
+                <div
+                  class="features-icon service-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-3"
+                >
+                  <i class="bi bi-easel"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="slogan fs-4">Ledo Markt</h3>
+                <p class="slogan-pg service-pg mb-4">
+                  Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
+                  Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+                </p>
+                <a
+                  class="services-read-more d-flex align-items-center gap-2 text-decoration-none fw-bold"
+                  href=""
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 p-4 bg-white d-flex gap-4 rounded-3 hover-shadow hover-bg"
+            >
+              <div class="d-flex gap-2 align-items-start">
+                <div
+                  class="features-icon service-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 bg-primary-subtle text-primary rounded-3"
+                >
+                  <i class="bi bi-clipboard-data"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="slogan fs-4">Asperiores Commodit</h3>
+                <p class="slogan-pg service-pg mb-4">
+                  Non et temporibus minus omnis sed dolor esse consequatur.
+                  Cupiditate sed error ea fuga sit provident adipisci neque.
+                </p>
+                <a
+                  class="services-read-more d-flex align-items-center gap-2 text-decoration-none fw-bold"
+                  href=""
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-7 pb-5" id="pricing">
+      <div class="container">
+        <div class="text-center pb-5">
+          <h2 class="section-3-heading">Pricing</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-lg-3 mb-3 gap-4 gap-lg-0 text-start"
+        >
+          <div class="col d-flex">
+            <div
+              class="card border-0 rounded-4 p-4 hover-shadow mb-3 mb-md-0 h-100 d-flex flex-column"
+            >
+              <div class="card-body d-flex flex-column gap-3">
+                <h4 class="text-start my-0 fw-normal slogan">Basic Plan</h4>
+                <h1
+                  class="text-start card-title pricing-card-title pricing m-0"
+                >
+                  <sup class="fs-4">$</sup
+                  ><span class="display-4 fw-bold">9.9</span
+                  ><small class="text-body-secondary fw-light"
+                    ><sub class="fs-6"> / month</sub></small
+                  >
+                </h1>
+                <p class="text-start m-0">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium totam.
+                </p>
+                <span class="slogan fw-normal prices-featured"
+                  >Featured Included:</span
+                >
+                <p class="m-0">
+                  <i class="bi bi-check-circle-fill fs-5 text-primary me-2"></i
+                  >Duis aute irure dolor
+                </p>
+                <p class="m-0">
+                  <i class="bi bi-check-circle-fill fs-5 text-primary me-2"></i
+                  >Excepteur sint occaecat
+                </p>
+                <p class="m-0">
+                  <i class="bi bi-check-circle-fill fs-5 text-primary me-2"></i
+                  >Nemo enim ipsam voluptatem
+                </p>
+                <div class="mt-auto">
+                  <button
+                    type="button"
+                    class="w-100 fs-6 btn btn-lg bg-primary buy-hover text-white rounded-pill d-flex align-items-center gap-2 justify-content-center"
+                  >
+                    Buy Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div
+              class="card border-0 bg-primary rounded-4 p-4 hover-shadow mb-3 mb-md-0 h-100 d-flex flex-column"
+            >
+              <div class="card-body d-flex flex-column gap-3 position-relative">
+                <div
+                  class="bg-white popular-badge position-absolute rounded-pill"
+                >
+                  Most Popular
+                </div>
+                <h4 class="text-start text-white my-0 fw-normal slogan">
+                  Standard Plan
+                </h4>
+                <h1
+                  class="text-start text-white card-title pricing-card-title pricing m-0"
+                >
+                  <sup class="fs-4">$</sup
+                  ><span class="display-4 fw-bold">19.9</span
+                  ><small><sub class="fs-6 text-white"> / month</sub></small>
+                </h1>
+                <p class="text-start text-white m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum.
+                </p>
+                <span class="slogan fw-normal prices-featured text-white"
+                  >Featured Included:</span
+                >
+                <p class="text-white m-0">
+                  <i class="bi bi-check-circle-fill fs-5 me-2 text-white"></i
+                  >Lorem ipsum dolor sit amet
+                </p>
+                <p class="text-white m-0">
+                  <i class="bi bi-check-circle-fill fs-5 me-2 text-white"></i
+                  >Consectetur adipiscing elit
+                </p>
+                <p class="text-white m-0">
+                  <i class="bi bi-check-circle-fill fs-5 me-2 text-white"></i
+                  >Sed do eiusmod tempor
+                </p>
+                <p class="text-white m-0">
+                  <i class="bi bi-check-circle-fill fs-5 me-2 text-white"></i>Ut
+                  labore et dolore magna
+                </p>
+                <div class="mt-auto">
+                  <button
+                    type="button"
+                    class="w-100 fs-6 btn btn-lg bg-white text-primary buy-hover rounded-pill d-flex align-items-center gap-2 justify-content-center"
+                  >
+                    Buy Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div
+              class="card border-0 rounded-4 p-4 hover-shadow h-100 d-flex flex-column"
+            >
+              <div class="card-body d-flex flex-column gap-3">
+                <h4 class="text-start my-0 fw-normal slogan">Premium Plan</h4>
+                <h1
+                  class="text-start card-title pricing-card-title pricing m-0"
+                >
+                  <sup class="fs-4">$</sup
+                  ><span class="display-4 fw-bold">39.9</span
+                  ><small><sub class="fs-6"> / month</sub></small>
+                </h1>
+                <p class="text-start m-0">
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate
+                  velit esse quam nihil molestiae.
+                </p>
+                <span class="slogan fw-normal prices-featured"
+                  >Featured Included:</span
+                >
+                <p class="m-0">
+                  <i class="bi bi-check-circle-fill fs-5 text-primary me-2"></i
+                  >Temporibus autem quibusdam
+                </p>
+                <p class="m-0">
+                  <i class="bi bi-check-circle-fill fs-5 text-primary me-2"></i
+                  >Saepe eveniet ut et voluptates
+                </p>
+                <p class="m-0">
+                  <i class="bi bi-check-circle-fill fs-5 text-primary me-2"></i
+                  >Nam libero tempore soluta
+                </p>
+                <p class="m-0">
+                  <i class="bi bi-check-circle-fill fs-5 text-primary me-2"></i
+                  >Cumque nihil impedit quo
+                </p>
+                <p class="m-0">
+                  <i class="bi bi-check-circle-fill fs-5 text-primary me-2"></i
+                  >Maxime placeat facere possimus
+                </p>
+                <div class="mt-auto">
+                  <button
+                    type="button"
+                    class="w-100 fs-6 btn btn-lg bg-primary buy-hover text-white rounded-pill d-flex align-items-center gap-2 justify-content-center"
+                  >
+                    Buy Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-8">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-5">
+            <h1 class="slogan mb-3">Have a question? Check out the FAQ</h1>
+            <p class="mb-4">
+              Maecenas tempus tellus eget condimentum rhoncus sem quam semper
+              libero sit amet adipiscing sem neque sed ipsum.
+            </p>
+            <div class="faq-arrow d-none d-lg-block">
+              <svg width="200" height="211" style="color: #0d6efd">
+                <path
+                  d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item bg-white border-0 rounded-2 mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                    volutpat lacus laoreet non curabitur gravida. Venenatis
+                    lectus magna fringilla urna porttitor rhoncus dolor purus
+                    non.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-white border-0 rounded-2 mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Feugiat scelerisque varius morbi enim nunc faucibus?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque
+                    habitant morbi. Id interdum velit laoreet id donec ultrices.
+                    Fringilla phasellus faucibus scelerisque eleifend donec
+                    pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                    ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-white border-0 rounded-2 mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Dolor sit amet consectetur adipiscing elit pellentesque?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem
+                    nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                    pellentesque eu tincidunt. Lectus urna duis convallis
+                    convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-white border-0 rounded-2 mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque
+                    habitant morbi. Id interdum velit laoreet id donec ultrices.
+                    Fringilla phasellus faucibus scelerisque eleifend donec
+                    pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                    ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-white border-0 rounded-2 mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Tempus quam pellentesque nec nam aliquam sem et tortor?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo.
+                    Dignissim suspendisse in est ante in. Nunc vel risus commodo
+                    viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
+                    bibendum est. Purus gravida quis blandit turpis cursus in.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-white border-0 rounded-2 mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    Perspiciatis quod quo quos nulla quo illum ullam?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Enim ea facilis quaerat voluptas quidem et dolorem. Quis et
+                    consequatur non sed in suscipit sequi. Distinctio ipsam
+                    dolore et.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-9">
+      <div class="call-to-action bg-primary py-5">
+        <div class="text-center w-lg-75 mx-auto mb-4">
+          <h1 class="fs-3 fw-bold slogan text-white fw-light">
+            Call To Action
+          </h1>
+        </div>
+        <div class="text-center mb-4">
+          <p class="text-white w-75 m-auto slogan-pg">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn cta-2 text-white rounded-pill px-4 py-2"
+            >Call To Action</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="section-10" id="contact">
+      <div class="container py-5">
+        <div class="text-center pb-5">
+          <h2 class="section-3-heading">Contact</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+        </div>
+        <div class="row justify-content-around gap-5 gap-lg-0 px-2 px-lg-0">
+          <div class="col-lg-4 bg-primary rounded-4 p-4 p-lg-5">
+            <div>
+              <h1 class="slogan text-white">Contact Info</h1>
+              <p class="slogan-pg contact-pg">
+                Praesent sapien massa, convallis a pellentesque nec, egestas non
+                nisi. Vestibulum ante ipsum primis.
+              </p>
+            </div>
+            <div class="d-flex flex-column gap-4">
+              <div class="d-flex contact-item align-items-center gap-4">
+                <div>
+                  <div
+                    class="features-icon contact-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 text-primary rounded-circle"
+                  >
+                    <i class="bi text-white bi-geo-alt"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="slogan text-white fs-5">Phone Number</h3>
+                  <p class="slogan-pg contact-pg fs-6 mb-0">
+                    A108 Adam Street <br />
+                    New York, NY 535022
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex contact-item align-items-center gap-4">
+                <div>
+                  <div
+                    class="features-icon contact-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 text-primary rounded-circle"
+                  >
+                    <i class="bi text-white bi-telephone"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="slogan text-white fs-5">Our Location</h3>
+                  <p class="slogan-pg contact-pg fs-6 mb-0">
+                    +1 5589 55488 55 <br />
+                    +1 6678 254445 41
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex contact-item align-items-center gap-4">
+                <div>
+                  <div
+                    class="features-icon contact-icon d-flex align-items-center justify-content-center fs-4 fw-bold p-3 text-primary rounded-circle"
+                  >
+                    <i class="bi text-white bi-envelope"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="slogan text-white fs-5">Our Location</h3>
+                  <p class="slogan-pg contact-pg fs-6 mb-0">
+                    info@example.com <br />
+                    contact@example.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 bg-white p-4 p-lg-5 rounded-4 shadow">
+            <div class="form">
+              <h1 class="slogan fs-2 fw-normal">Get In Touch</h1>
+              <p class="slogan-pg">
+                Praesent sapien massa, convallis a pellentesque nec, egestas non
+                nisi. Vestibulum ante ipsum primis.
+              </p>
+            </div>
+            <div class="form">
+              <form method="get">
+                <div class="row mb-3">
+                  <div class="col-lg-6 d-flex justify-content-center">
+                    <input
+                      class="form-input px-4 py-3 rounded-2 mb-3 mb-lg-0"
+                      placeholder="Your Name"
+                      type="text"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-center">
+                    <input
+                      class="form-input px-4 py-3 rounded-2"
+                      placeholder="Your Email"
+                      type="text"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  class="form-input rounded-2 px-4 py-3 mb-3"
+                  placeholder="Subject"
+                />
+                <textarea
+                  class="form-input rounded-2 px-4 py-3 mb-3"
+                  rows="6"
+                  placeholder="Message"
+                ></textarea>
+                <div class="d-flex justify-content-center">
+                  <a
+                    class="bg-primary text-white px-4 py-3 text-decoration-none rounded-pill get-started-header"
+                    href="#"
+                    >Send Message</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white pt-5 pb-3">
+      <div class="container">
+        <div class="row gap-5 gap-lg-0">
+          <div class="col-lg-4">
+            <a class="text-decoration-none" href=""
+              ><h1 class="sitename m-0 fs-3 pb-3">iLanding</h1></a
+            >
+            <span class="slogan fw-normal"
+              >A108 Adam Street<br />New York, NY 535022</span
+            >
+            <p class="mb-0 mt-4 slogan fw-normal">
+              <strong>Phone:</strong> +1 5589 55488 55
+            </p>
+            <p class="mb-0 slogan fw-normal mb-4">
+              <strong>Email:</strong> info@example.com
+            </p>
+            <div class="footer-socials">
+              <a
+                class="text-decoration-none footer-social rounded-circle"
+                href=""
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                class="text-decoration-none footer-social rounded-circle"
+                href=""
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                class="text-decoration-none footer-social rounded-circle"
+                href=""
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                class="text-decoration-none footer-social rounded-circle"
+                href=""
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="d-lg-flex col-lg-8">
+            <div class="col-9 col-lg-3 mb-5 mb-lg-0">
+              <h5 class="slogan fs-6">Useful Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Terms Of Services</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-9 col-lg-3 mb-5 mb-lg-0">
+              <h5 class="slogan fs-6">Our Services</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Web Design</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Web Development</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Product Management</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Marketing</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Graphic Design</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-9 col-lg-3 mb-5 mb-lg-0">
+              <h5 class="slogan fs-6">Hic solutasetp</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Molestiae accusamus iure</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Excepturi dignissimos</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Suscipit distinctio</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >DilectaTerms Of Services</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Dilecta</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-9 col-lg-3 mb-5 mb-lg-0">
+              <h5 class="slogan fs-6">Nobis illum</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Ipsam</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Laudantium dolorum</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Dinera</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Trodelas</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link footer-link slogan-pg p-0"
+                    >Flexo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container text-center py-2 footer-credit">
+        <p class="slogan-pg mb-2">
+          © Copyright <strong>iLanding</strong> All Rights Reserved
+        </p>
+        <span class="d-flex justify-content-center gap-1 footer-credit"
+          >Designed by
+          <a class="text-decoration-none footer-credit-link" href=""
+            >BootstrapMade</a
+          ></span
+        >
+      </div>
+    </footer>
+    <div class="modal fade" id="mobileMenuModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="modal-content rounded-top-4 p-3">
+          <div class="d-flex justify-content-end align-items-center mb-3">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <ul class="list-unstyled" id="scrollspy-nav">
+            <li>
+              <a href="#home" class="d-block py-2 fs-5 nav-link link-dark"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about-section"
+                class="d-block py-2 fs-5 nav-link link-dark"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#features" class="d-block py-2 fs-5 nav-link link-dark"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="d-block py-2 fs-5 nav-link link-dark"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#pricing" class="d-block py-2 fs-5 nav-link link-dark"
+                >Pricing</a
+              >
+            </li>
+            <li class="py-2">
+              <details>
+                <summary
+                  class="fs-5 text-dark d-flex justify-content-between align-items-center"
+                >
+                  Dropdown
+                  <span><i class="bi bi-chevron-down text-dark"></i></span>
+                </summary>
+                <ul
+                  class="bg-light border border-dark-subtle rounded p-3 list-unstyled mt-2"
+                >
+                  <li>
+                    <a href="#" class="d-block py-2 nav-link link-dark fs-5"
+                      >Dropdown 1</a
+                    >
+                  </li>
+                  <li>
+                    <details>
+                      <summary
+                        class="fs-5 text-dark d-flex py-2 justify-content-between align-items-center"
+                      >
+                        Deep Dropdown
+                        <span
+                          ><i class="bi bi-chevron-down text-dark"></i
+                        ></span>
+                      </summary>
+                      <ul
+                        class="bg-light border border-dark-subtle rounded p-3 list-unstyled mt-2"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="d-block py-2 nav-link link-dark fs-5"
+                            >Deep Dropdown 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="d-block py-2 nav-link link-dark fs-5"
+                            >Deep Dropdown 2</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="d-block py-2 nav-link link-dark fs-5"
+                            >Deep Dropdown 3</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="d-block py-2 nav-link link-dark fs-5"
+                            >Deep Dropdown 4</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="d-block py-2 nav-link link-dark fs-5"
+                            >Deep Dropdown 5</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block py-2 nav-link link-dark fs-5"
+                      >Dropdown 2</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="d-block py-2 nav-link link-dark fs-5"
+                      >Dropdown 3</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="d-block py-2 nav-link link-dark fs-5"
+                      >Dropdown 4</a
+                    >
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a href="#contact" class="d-block py-2 fs-5 nav-link link-dark"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 40,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 2,
+          },
+          600: {
+            items: 4,
+          },
+          1000: {
+            items: 6,
+          },
+        },
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
