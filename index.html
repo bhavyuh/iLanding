@@ -133,7 +133,7 @@
         font-weight: 600 !important;
       }
 
-      .nav-link .active {
+      .nav-link.active {
         color: #0d6efd !important;
       }
 
@@ -142,7 +142,14 @@
       }
     </style>
   </head>
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#nav-scrollspy"
+    data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true"
+    class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+    tabindex="0"
+  >
     <main class="relative">
       <header
         class="absolute d-flex header-container rounded-pill px-3 px-lg-4 shadow-sm align-items-center justify-content-between justify-content-md-between py-2"
@@ -150,7 +157,7 @@
         <a class="text-decoration-none" href=""
           ><h1 class="sitename m-0">iLanding</h1></a
         >
-        <ul class="nav mb-2 mb-md-0 gap-4 d-none d-xl-flex" id="scrollspy-nav">
+        <ul class="nav mb-2 mb-md-0 gap-4 d-none d-xl-flex" id="nav-scrollspy">
           <li>
             <a href="#home" class="nav-link p-3 link-dark">Home</a>
           </li>
@@ -235,6 +242,7 @@
           ></a>
         </div>
       </header>
+
       <section id="home" class="container section-1">
         <div
           class="container d-flex flex-column flex-lg-row align-items-center justify-content-between text-center text-lg-start"
@@ -1863,7 +1871,7 @@
               data-bs-dismiss="modal"
             ></button>
           </div>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled" id="nav-scrollspy">
             <li>
               <a href="#home" class="d-block py-2 fs-5 nav-link link-dark"
                 >Home</a
@@ -2024,4 +2032,3 @@
     ></script>
   </body>
 </html>
-
