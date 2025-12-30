@@ -16,7 +16,6 @@ A Bootstrap-based landing page created as a practice project to apply responsive
 - [Overview](#-overview)
 - [Features](#-features)
 - [Technologies Used](#-technologies-used)
-- [Preview](#-preview)
 - [Credits](#-credits)
 
 ## 🔍 Overview
