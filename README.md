@@ -1,7 +1,16 @@
-# iLanding
+![Portfolio Preview](imgs/preview.png)
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Live-blue?style=for-the-badge">
+  <img src="https://img.shields.io/github/contributors/bhavyuh/Portfolio?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/bhavyuh/Portfolio?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/bhavyuh/Portfolio?style=for-the-badge">
+</p>
+<p align="center">
 A Bootstrap-based landing page created as a practice project to apply responsive design concepts and improve layout-building skills.
-
-🔗 Live Website: https://bhavyuh.github.io/iLanding/
+</p>
+<p align="center">
+<a href="https://bhavyuh.github.io/iLanding/">Preview</a>
+</p>
 
 ## 📚 Table of Contents
 - [Overview](#-overview)
@@ -31,11 +40,6 @@ The goal of this project was to understand:
 - HTML5
 - CSS3
 - Bootstrap 5
-
-## 🖼 Preview
-
-You can view the live version here:
-👉 https://bhavyuh.github.io/iLanding/
 
 ## 🙏 Credits
 
