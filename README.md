@@ -14,26 +14,11 @@ A Bootstrap-based landing page created as a practice project to apply responsive
 
 ## 📚 Table of Contents
 - [Overview](#-overview)
-- [Features](#-features)
 - [Technologies Used](#-technologies-used)
 - [Credits](#-credits)
 
 ## 🔍 Overview
-
-iLanding is a simple and clean landing page built by following a real template for learning purposes (tried my best to make it identical).
-The goal of this project was to understand:
-- Bootstrap’s grid system
-- Responsive UI building
-- Basic component usage
-- Spacing, alignment, and layout structure
-
-## ✨ Features
-
-- Fully responsive layout
-- Clean and minimal design
-- Bootstrap 5 components
-- Modern landing page structure
-- Mobile-friendly sections
+iLanding is a simple and clean landing page built by following a real template for learning purposes (tried my best to make it identical)
 
 ## 🛠 Technologies Used
 - HTML5
@@ -41,5 +26,4 @@ The goal of this project was to understand:
 - Bootstrap 5
 
 ## 🙏 Credits
-
 - Reference template: [iLanding demo template by BootstrapMade](https://bootstrapmade.com/demo/iLanding/)
